@@ -8,6 +8,7 @@ RUN             mkdir /app && chown -R roboshop:roboshop /app
 WORKDIR         /app
 USER            roboshop
 ADD             ./ /app/
-RUN             npm install
+# Ensure npm install is exectued to generate the node_modules directory and install all dependencies. This will be executed as a non-root user. But using security context at pod level, we will enforce to run it as non-root user
+ADD             node_modules/ node_modules/
 ENTRYPOINT      ["node", "/app/server.js"]
 EXPOSE          8080
