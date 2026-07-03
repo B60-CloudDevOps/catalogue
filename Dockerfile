@@ -12,3 +12,4 @@ ADD             ./ /app/
 ADD             ./node_modules/ node_modules/
 ENTRYPOINT      ["node", "/app/server.js"]
 EXPOSE          8080
+# This is how we can run container using roboshop account at container level;,But its perferred to deal at POD using PodSecurityContext
