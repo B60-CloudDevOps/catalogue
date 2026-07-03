@@ -8,5 +8,6 @@ RUN             mkdir /app && chown -R roboshop:roboshop /app
 WORKDIR         /app
 USER            roboshop
 ADD             ./ /app/
+RUN             npm install
 ENTRYPOINT      ["node", "/app/server.js"]
 EXPOSE          8080
