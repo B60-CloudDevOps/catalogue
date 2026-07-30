@@ -7,5 +7,5 @@ on:
   workflow_dispatch:
 
 jobs:
-  call-workflow-in-another-repo:
+  reuse:
     uses: B60-CloudDevOps/roboshop-github-actions/.github/workflows/ci-main.yml@main
