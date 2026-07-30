@@ -2,7 +2,7 @@
 name: CI-Branch
 on:
   push:
-    branches:
+    branches-ignore:
       - main
   workflow_dispatch:
 
