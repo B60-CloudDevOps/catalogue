@@ -11,4 +11,5 @@ jobs:
     uses: B60-CloudDevOps/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       app_type: nodejs
+      component: catalogue
 # Test
