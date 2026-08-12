@@ -10,4 +10,10 @@ jobs:
   reuse:
     uses: B60-CloudDevOps/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
+<<<<<<< HEAD
       app_type: nodejs
+=======
+      app_type: nodejs
+      component: catalogue
+# Test
+>>>>>>> de01a0f68828811265b241a9e3150e58e247b900
