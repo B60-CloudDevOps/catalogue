@@ -8,6 +8,7 @@ on:
 
 jobs:
   reuse:
-    uses: B60-CloudDevOps/roboshop-github-actions/.github/workflows/ci-main.yml@main
+    uses: B60-CloudDevOps/roboshop-github-actions/.github/workflows/deploy.yml@main
     with:
       app_type: nodejs
+      app_env: test
