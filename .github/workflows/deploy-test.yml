@@ -1,9 +1,6 @@
 # All the actions will be executed only if the commit happens on main branch
-name: CI-CD-MAIN
+name: Deploy-Test
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
